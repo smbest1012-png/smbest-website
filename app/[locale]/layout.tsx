@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import "@/app/globals.css";
 import { locales, localeTags, isLocale, type Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/get-dictionary";
-import { localeAlternates } from "@/lib/seo";
+import { localeAlternates, localePath } from "@/lib/seo";
 import { fontStylesheet, fontStyleVars } from "@/lib/fonts";
 import { site } from "@/lib/constants/site";
 import { Header } from "@/components/layout/header";
@@ -39,7 +39,7 @@ export async function generateMetadata({
       title: dict.meta.title,
       description: dict.meta.description,
       locale: localeTags[locale].replace("-", "_"),
-      url: `/${locale}`,
+      url: localePath(locale, ""),
     },
     robots: { index: true, follow: true },
   };

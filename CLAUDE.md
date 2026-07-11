@@ -13,8 +13,16 @@
 - `npx tsc --noEmit` — 타입 검사
 - `node scripts/build-fonts.mjs` — 폰트 패키지 변경 시 /public/fonts 재생성
 
+## 배포
+- 정적 export(`output: "export"`, `trailingSlash: true`, `images.unoptimized`) → `out/`
+- GitHub Pages: `.github/workflows/deploy-pages.yml`가 main push 시 `npm run build` → `out/` 배포
+  (커스텀 도메인 smbest.kr, `public/CNAME`). `public/.nojekyll`로 `_next/` 보호
+- Vercel도 동일 `out/`을 서빙하므로 양쪽 유지. 서버·DB·API 라우트 없음(순수 정적)
+- 루트 `/` → `/ko/`는 `public/index.html`(meta refresh+JS+링크)로 처리 (export에선 redirects() 무효)
+- `out/404.html`은 빌드 후 `scripts/make-static-404.mjs`가 브랜드·다국어 정적 404로 덮어씀
+
 ## 구조 핵심
-- `app/[locale]/…` — ko/en/zh/ja 4개 언어. 루트 `/`는 `/ko`로 redirect (next.config.ts)
+- `app/[locale]/…` — ko/en/zh/ja 4개 언어. `<html>`은 `[locale]/layout.tsx`가 렌더(루트 레이아웃 없음)
 - `lib/i18n/dictionaries/{ko,en,zh,ja}.ts` — 모든 문구. ko가 원본, 나머지는 임시 번역
 - `lib/products/products.ts` — 제품 11개 단일 소스. 한국어 제품명은 대표 제공 원문(주석)
   기준 확정. 제품 사진(`image: null`)과 브랜드 로마자 표기(Ronart/Homttagi 등)는 확인 대기
