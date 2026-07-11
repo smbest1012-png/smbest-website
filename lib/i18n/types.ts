@@ -7,11 +7,6 @@ export interface CategoryCopy {
   cta: string;
 }
 
-export interface HistoryEntry {
-  date: string;
-  event: string;
-}
-
 export interface Dictionary {
   meta: {
     title: string;
@@ -87,8 +82,6 @@ export interface Dictionary {
     address: string;
     phoneLabel: string;
     phone: string;
-    faxLabel: string;
-    fax: string;
     emailLabel: string;
     email: string;
     hoursNote: string;
@@ -106,8 +99,6 @@ export interface Dictionary {
     visionTitle: string;
     vision: string;
     visionBody: string;
-    historyTitle: string;
-    history: HistoryEntry[];
     areasTitle: string;
     areas: { title: string; description: string }[];
   };

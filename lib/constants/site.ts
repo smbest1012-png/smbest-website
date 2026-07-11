@@ -17,8 +17,7 @@ export const site = {
   addressEn: "13 Baegyangsunhwan-ro, Busanjin-gu, Busan, Republic of Korea",
   phone: "070-4001-0635",
   phoneIntl: "+82-70-4001-0635",
-  fax: "051-611-0635",
-  email: "smbest1012@gmail.com",
+  email: "sean1012@naver.com",
   /** 배포 도메인 확정 시 교체 (canonical / OG / sitemap 기준 URL) */
   url: "https://smbest.kr",
   smartStoreUrl: "https://smartstore.naver.com/mog/profile",

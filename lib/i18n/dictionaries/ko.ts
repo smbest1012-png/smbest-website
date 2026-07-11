@@ -161,10 +161,8 @@ const ko: Dictionary = {
     address: "부산광역시 부산진구 백양순환로 13",
     phoneLabel: "전화",
     phone: "070-4001-0635",
-    faxLabel: "팩스",
-    fax: "051-611-0635",
     emailLabel: "이메일",
-    email: "smbest1012@gmail.com",
+    email: "sean1012@naver.com",
     hoursNote: "제품 구매는 네이버 스마트스토어에서 바로 가능합니다.",
     mailCta: "이메일 보내기",
     mapCta: "지도에서 보기",
@@ -185,17 +183,6 @@ const ko: Dictionary = {
     vision: "자연과 함께, 사람을 위해",
     visionBody:
       "일상에 필요한 제품을 만들면서도 환경을 생각하고, 혁신적인 아이디어를 더해 누구나 즐겁게 쓸 수 있는 제품을 만듭니다. 모두가 행복한 환경에서 살아가는 미래 — SMBEST가 그리는 내일입니다.",
-    historyTitle: "걸어온 길",
-    history: [
-      { date: "2014. 06", event: "회사 설립, 친환경 3D 프린터 필라멘트 개발 착수" },
-      { date: "2014. 07", event: "KOTRA 수출 첫걸음(Export Gateway) 참여기업 선정" },
-      { date: "2014. 11", event: "캐나다·독일·싱가포르에 청소용품 수출" },
-      { date: "2014. 12", event: "원산지증명 수출업체 인증 취득" },
-      { date: "2015. 01", event: "커피박 플라스틱 청소용품 출시, 상표 DIRT BYE 등록" },
-      { date: "2015. 02", event: "iF 디자인 어워드 수상 (DIRT BYE)" },
-      { date: "2015. 05", event: "신라대학교 패밀리기업 협약, 부산글로벌포럼 가입" },
-      { date: "2015. 06", event: "중국 지난 우수상품전 참가, 호주·중국 수출" },
-    ],
     areasTitle: "사업 영역",
     areas: [
       {
@@ -209,14 +196,19 @@ const ko: Dictionary = {
           "재활용이 어려운 커피찌꺼기, 왕겨 같은 천연 원료를 활용한 친환경 필라멘트를 만듭니다.",
       },
       {
+        title: "3D 프린팅용 레진",
+        description:
+          "덴탈 모델용·워셔블 등 용도에 맞춘 3D 프린팅용 UV 레진을 개발·생산합니다.",
+      },
+      {
         title: "생활용품",
         description:
           "친환경 플라스틱에 새로운 개념을 더한 주방·생활용품을 개발·생산합니다.",
       },
       {
-        title: "교육용 완구",
+        title: "시제품 제작",
         description:
-          "아이들의 사고력과 창의력을 키우는 친환경 교육 완구를 개발합니다.",
+          "3D 프린팅 기술을 활용해 아이디어를 실물 시제품으로 제작합니다.",
       },
     ],
   },

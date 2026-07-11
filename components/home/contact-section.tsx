@@ -16,7 +16,6 @@ export function ContactSection({
   const rows = [
     { label: contact.addressLabel, value: contact.address },
     { label: contact.phoneLabel, value: contact.phone, href: `tel:${site.phoneIntl}` },
-    { label: contact.faxLabel, value: contact.fax },
     { label: contact.emailLabel, value: contact.email, href: `mailto:${site.email}` },
   ];
 

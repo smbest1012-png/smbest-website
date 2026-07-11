@@ -162,10 +162,8 @@ const en: Dictionary = {
     address: "13 Baegyangsunhwan-ro, Busanjin-gu, Busan, Republic of Korea",
     phoneLabel: "Phone",
     phone: "+82-70-4001-0635",
-    faxLabel: "Fax",
-    fax: "+82-51-611-0635",
     emailLabel: "Email",
-    email: "smbest1012@gmail.com",
+    email: "sean1012@naver.com",
     hoursNote: "Products can be purchased directly on our Naver Smart Store.",
     mailCta: "Send an email",
     mapCta: "View on map",
@@ -186,17 +184,6 @@ const en: Dictionary = {
     vision: "With nature, for people",
     visionBody:
       "We make the everyday products people need while thinking about the environment, adding innovative ideas so that anyone can enjoy using them. A future where everyone lives in a happy environment — that is the tomorrow SMBEST is working toward.",
-    historyTitle: "Our journey",
-    history: [
-      { date: "Jun 2014", event: "Company founded; began developing eco-friendly 3D printer filaments" },
-      { date: "Jul 2014", event: "Selected for KOTRA's Export Gateway program" },
-      { date: "Nov 2014", event: "Exported cleaning tools to Canada, Germany and Singapore" },
-      { date: "Dec 2014", event: "Certified as an exporter for certificates of origin" },
-      { date: "Jan 2015", event: "Launched coffee-ground plastic cleaning tools; registered the DIRT BYE trademark" },
-      { date: "Feb 2015", event: "Received the iF Design Award (DIRT BYE)" },
-      { date: "May 2015", event: "Partnered with Silla University; joined Busan Global Forum" },
-      { date: "Jun 2015", event: "Exhibited in Jinan, China; exported to Australia and China" },
-    ],
     areasTitle: "Business areas",
     areas: [
       {
@@ -210,14 +197,19 @@ const en: Dictionary = {
           "Eco-friendly filaments made from hard-to-recycle natural raw materials such as coffee grounds and rice husks.",
       },
       {
+        title: "Resins for 3D printing",
+        description:
+          "UV resins for 3D printing, tailored to their use — from dental models to water-washable formulas.",
+      },
+      {
         title: "Household goods",
         description:
           "Kitchen and household products that add new ideas to eco-friendly plastics.",
       },
       {
-        title: "Educational toys",
+        title: "Prototyping",
         description:
-          "Eco-friendly educational toys that nurture children's thinking and creativity.",
+          "We turn ideas into physical prototypes with 3D printing technology.",
       },
     ],
   },

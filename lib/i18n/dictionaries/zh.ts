@@ -150,10 +150,8 @@ const zh: Dictionary = {
     address: "韩国釜山广域市釜山镇区白杨循环路13",
     phoneLabel: "电话",
     phone: "+82-70-4001-0635",
-    faxLabel: "传真",
-    fax: "+82-51-611-0635",
     emailLabel: "邮箱",
-    email: "smbest1012@gmail.com",
+    email: "sean1012@naver.com",
     hoursNote: "产品可直接在Naver智能商店购买。",
     mailCta: "发送邮件",
     mapCta: "在地图中查看",
@@ -174,17 +172,6 @@ const zh: Dictionary = {
     vision: "与自然同行，为人而造",
     visionBody:
       "我们在制造日常所需产品的同时关爱环境，融入创新理念，让每个人都能愉快使用。人人都生活在幸福环境中的未来 — 这就是SMBEST描绘的明天。",
-    historyTitle: "发展历程",
-    history: [
-      { date: "2014.06", event: "公司成立，启动环保3D打印线材研发" },
-      { date: "2014.07", event: "入选KOTRA“Export Gateway”参与企业" },
-      { date: "2014.11", event: "向加拿大、德国、新加坡出口清洁用品" },
-      { date: "2014.12", event: "取得原产地证明出口企业认证" },
-      { date: "2015.01", event: "推出咖啡渣塑料清洁用品，注册商标DIRT BYE" },
-      { date: "2015.02", event: "荣获iF设计奖（DIRT BYE）" },
-      { date: "2015.05", event: "与新罗大学签订家族企业协议，加入釜山全球论坛" },
-      { date: "2015.06", event: "参加中国济南优秀商品展，出口澳大利亚、中国" },
-    ],
     areasTitle: "业务领域",
     areas: [
       {
@@ -198,12 +185,17 @@ const zh: Dictionary = {
           "利用咖啡渣、稻壳等难以回收的天然原料，制造环保线材。",
       },
       {
+        title: "3D打印用树脂",
+        description:
+          "开发并生产牙科模型用、可水洗等多种用途的3D打印UV树脂。",
+      },
+      {
         title: "生活用品",
         description: "开发并生产为环保塑料注入新理念的厨房与生活用品。",
       },
       {
-        title: "教育玩具",
-        description: "开发培养儿童思维能力与创造力的环保教育玩具。",
+        title: "原型制作",
+        description: "利用3D打印技术，将创意制作成实物原型。",
       },
     ],
   },

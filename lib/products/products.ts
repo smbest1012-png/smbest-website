@@ -8,10 +8,13 @@ import type { Product, ProductCategory } from "@/lib/products/types";
  * en/zh/ja names and all summaries are derived from those titles
  * (임시 번역 — 공식 번역 수령 시 교체).
  *
+ * Product photos: captured from the smartstore detail pages by SMBEST
+ * (2026-07-11), converted to webp in /public/products.
+ * 레진 브랜드 로마자 "RORNART"는 제품 라벨 표기로 확인함.
+ *
  * Still pending from SMBEST:
- *   - official product photos → drop into /public/products, set `image`
- *   - official romanization of brand names (론아트 → "Ronart" assumed,
- *     홈딱이 → "Homttagi" assumed, 설거지 친구들 → "Dishwashing Friends" assumed)
+ *   - 홈딱이 romanization ("Homttagi" assumed; 상세 이미지에는 "홈닦기" 표기 —
+ *     스토어 제목(홈딱이)을 따름), 설거지 친구들 → "Dishwashing Friends" assumed
  */
 
 const store = (id: string) => `https://smartstore.naver.com/mog/products/${id}`;
@@ -24,12 +27,12 @@ export const products: Product[] = [
     slug: "resin-01",
     category: "resin",
     storeUrl: store("8044525896"),
-    image: null,
+    image: "/products/resin-01.webp",
     name: {
       ko: "론아트 W 워셔블 레진 1kg",
-      en: "Ronart W Washable Resin 1kg",
-      zh: "Ronart W 水洗树脂 1kg",
-      ja: "Ronart W ウォッシャブルレジン 1kg",
+      en: "RORNART W Washable Resin 1kg",
+      zh: "RORNART W 水洗树脂 1kg",
+      ja: "RORNART W ウォッシャブルレジン 1kg",
     },
     summary: {
       ko: "물 세척이 가능한 고속 출력용 워셔블 UV 레진입니다.",
@@ -47,12 +50,12 @@ export const products: Product[] = [
     slug: "resin-02",
     category: "resin",
     storeUrl: store("6925858882"),
-    image: null,
+    image: "/products/resin-02.webp",
     name: {
       ko: "론아트 P시리즈 UV 레진 1kg",
-      en: "Ronart P-Series UV Resin 1kg",
-      zh: "Ronart P系列 UV树脂 1kg",
-      ja: "Ronart Pシリーズ UVレジン 1kg",
+      en: "RORNART P-Series UV Resin 1kg",
+      zh: "RORNART P系列 UV树脂 1kg",
+      ja: "RORNART Pシリーズ UVレジン 1kg",
     },
     summary: {
       ko: "무독성 고속 출력용 UV 레진입니다.",
@@ -70,12 +73,12 @@ export const products: Product[] = [
     slug: "resin-03",
     category: "resin",
     storeUrl: store("6876753347"),
-    image: null,
+    image: "/products/resin-03.webp",
     name: {
       ko: "론아트 D-Model 덴탈 레진 1kg",
-      en: "Ronart D-Model Dental Resin 1kg",
-      zh: "Ronart D-Model 牙科树脂 1kg",
-      ja: "Ronart D-Model デンタルレジン 1kg",
+      en: "RORNART D-Model Dental Resin 1kg",
+      zh: "RORNART D-Model 牙科树脂 1kg",
+      ja: "RORNART D-Model デンタルレジン 1kg",
     },
     summary: {
       ko: "덴탈 모델용 무독성 고속 출력 UV 레진입니다.",
@@ -93,12 +96,12 @@ export const products: Product[] = [
     slug: "resin-04",
     category: "resin",
     storeUrl: store("10301855216"),
-    image: null,
+    image: "/products/resin-04.webp",
     name: {
       ko: "론아트 D-Model 워셔블 덴탈 레진 1kg",
-      en: "Ronart D-Model Washable Dental Resin 1kg",
-      zh: "Ronart D-Model 水洗牙科树脂 1kg",
-      ja: "Ronart D-Model ウォッシャブルデンタルレジン 1kg",
+      en: "RORNART D-Model Washable Dental Resin 1kg",
+      zh: "RORNART D-Model 水洗牙科树脂 1kg",
+      ja: "RORNART D-Model ウォッシャブルデンタルレジン 1kg",
     },
     summary: {
       ko: "물 세척이 가능한 덴탈 모델용 무독성 UV 레진입니다.",
@@ -117,7 +120,7 @@ export const products: Product[] = [
     slug: "filament-01",
     category: "filament",
     storeUrl: store("7893753744"),
-    image: null,
+    image: "/products/filament-01.webp",
     name: {
       ko: "3D펜 스틱 필라멘트 PLA (30cm × 30개)",
       en: "3D Pen Stick Filament PLA (30cm × 30)",
@@ -140,7 +143,7 @@ export const products: Product[] = [
     slug: "filament-02",
     category: "filament",
     storeUrl: store("4215639975"),
-    image: null,
+    image: "/products/filament-02.webp",
     name: {
       ko: "3D펜 필라멘트 PLA (5m)",
       en: "3D Pen Filament PLA (5m)",
@@ -163,7 +166,7 @@ export const products: Product[] = [
     slug: "filament-03",
     category: "filament",
     storeUrl: store("2522282539"),
-    image: null,
+    image: "/products/filament-03.webp",
     name: {
       ko: "무독성 3D펜 필라멘트 (소재)",
       en: "Non-Toxic 3D Pen Filament (Material)",
@@ -186,7 +189,7 @@ export const products: Product[] = [
     slug: "filament-04",
     category: "filament",
     storeUrl: store("2007670927"),
-    image: null,
+    image: "/products/filament-04.webp",
     name: {
       ko: "커피 필라멘트 1kg",
       en: "Coffee Filament 1kg",
@@ -209,7 +212,7 @@ export const products: Product[] = [
     slug: "filament-05",
     category: "filament",
     storeUrl: store("8404630271"),
-    image: null,
+    image: "/products/filament-05.webp",
     name: {
       ko: "한방(약초) 필라멘트 1kg",
       en: "Herbal Filament 1kg",
@@ -233,7 +236,7 @@ export const products: Product[] = [
     slug: "kitchenware-01",
     category: "kitchenware",
     storeUrl: store("10102395782"),
-    image: null,
+    image: "/products/kitchenware-01.webp",
     name: {
       ko: "홈딱이 틈새 청소솔",
       en: "Homttagi Crevice Cleaning Brush",
@@ -256,7 +259,7 @@ export const products: Product[] = [
     slug: "kitchenware-02",
     category: "kitchenware",
     storeUrl: store("4720974910"),
-    image: null,
+    image: "/products/kitchenware-02.webp",
     name: {
       ko: "설거지 친구들 텀블러 청소솔",
       en: "Dishwashing Friends Tumbler Brush",

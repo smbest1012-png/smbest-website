@@ -27,15 +27,19 @@ export function ProductCard({
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card transition-shadow duration-200 hover:shadow-[0_2px_16px_-4px_hsl(150_18%_12%/0.12)]">
       <div
-        className={`relative flex aspect-[4/3] items-center justify-center overflow-hidden ${placeholderTint[product.category]}`}
+        className={`relative flex aspect-square items-center justify-center overflow-hidden ${
+          product.image ? "bg-white" : placeholderTint[product.category]
+        }`}
       >
         {product.image ? (
+          // Store detail captures carry labels/badges to the edges, so show
+          // the full image (contain on white) instead of cropping with cover.
           <Image
             src={product.image}
             alt={product.name[locale]}
             fill
             sizes="(max-width: 640px) 78vw, (max-width: 1024px) 45vw, 340px"
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            className="object-contain transition-transform duration-500 group-hover:scale-[1.03]"
           />
         ) : (
           <CategoryMotif

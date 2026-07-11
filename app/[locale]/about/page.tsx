@@ -95,28 +95,6 @@ export default async function AboutPage({
           ))}
         </dl>
       </section>
-
-      {/* History */}
-      <section className="border-t border-border bg-muted/40">
-        <div className="mx-auto max-w-6xl px-5 py-16 md:px-8 md:py-24">
-          <h2 className="eyebrow">{about.historyTitle}</h2>
-          <ol className="mt-8 max-w-3xl">
-            {about.history.map((entry) => (
-              <li
-                key={`${entry.date}-${entry.event.slice(0, 12)}`}
-                className="grid grid-cols-[6rem_1fr] gap-4 border-b border-border py-4 last:border-b-0 md:grid-cols-[8rem_1fr]"
-              >
-                <span className="font-display text-sm italic text-muted-foreground md:text-base">
-                  {entry.date}
-                </span>
-                <span className="text-sm leading-relaxed md:text-[0.9375rem]">
-                  {entry.event}
-                </span>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
     </>
   );
 }
