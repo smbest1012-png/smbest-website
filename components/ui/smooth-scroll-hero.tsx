@@ -72,11 +72,12 @@ const SmoothScrollHeroBackground: React.FC<
     ${clipStart}% ${clipEnd}%
   )`;
 
-  const backgroundSize = useTransform(
-    scrollY,
-    [0, scrollHeight + 500],
-    ["170%", "100%"],
-  );
+  // Zoom-out reveal. We animate a GPU-composited `transform: scale()` rather
+  // than `background-size` — the latter re-rasterizes the image on the main
+  // thread every frame (worst at the top, where it starts most zoomed in),
+  // which is what made the reveal stutter. The background layers stay at a
+  // fixed `cover` size and are scaled on the compositor instead.
+  const scale = useTransform(scrollY, [0, scrollHeight + 500], [1.7, 1]);
 
   return (
     <motion.div
@@ -88,23 +89,21 @@ const SmoothScrollHeroBackground: React.FC<
     >
       <motion.div
         aria-hidden="true"
-        className="absolute inset-0 md:hidden"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden"
         style={{
           backgroundImage: `url(${mobileImage})`,
-          backgroundSize: prefersReducedMotion ? "cover" : backgroundSize,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          scale: prefersReducedMotion ? 1 : scale,
+          willChange: "transform",
         }}
       />
 
       <motion.div
         aria-hidden="true"
-        className="absolute inset-0 hidden md:block"
+        className="absolute inset-0 hidden bg-cover bg-center bg-no-repeat md:block"
         style={{
           backgroundImage: `url(${desktopImage})`,
-          backgroundSize: prefersReducedMotion ? "cover" : backgroundSize,
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          scale: prefersReducedMotion ? 1 : scale,
+          willChange: "transform",
         }}
       />
 
