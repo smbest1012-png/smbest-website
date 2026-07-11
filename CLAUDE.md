@@ -16,8 +16,8 @@
 ## 구조 핵심
 - `app/[locale]/…` — ko/en/zh/ja 4개 언어. 루트 `/`는 `/ko`로 redirect (next.config.ts)
 - `lib/i18n/dictionaries/{ko,en,zh,ja}.ts` — 모든 문구. ko가 원본, 나머지는 임시 번역
-- `lib/products/products.ts` — 제품 11개 단일 소스. `isPlaceholder: true`인 항목은
-  공식 제품명/이미지/설명 수령 후 교체
+- `lib/products/products.ts` — 제품 11개 단일 소스. 한국어 제품명은 대표 제공 원문(주석)
+  기준 확정. 제품 사진(`image: null`)과 브랜드 로마자 표기(Ronart/Homttagi 등)는 확인 대기
 - `lib/constants/site.ts` — 회사 정보 단일 소스 (주소·전화·사업자번호 등)
 - `components/ui/smooth-scroll-hero.tsx` — 지정된 히어로 컴포넌트. 다른 것으로 대체 금지
 - 폰트: next/font 대신 Fontsource 셀프호스팅 (빌드 시 Google 다운로드가 실패하므로).
