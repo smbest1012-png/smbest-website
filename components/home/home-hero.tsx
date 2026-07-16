@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import SmoothScrollHero from "@/components/ui/smooth-scroll-hero";
 import { LogoMark } from "@/components/shared/logo-mark";
-import { site } from "@/lib/constants/site";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/types";
 
@@ -14,11 +13,9 @@ const SCROLL_HEIGHT = 1500;
 export function HomeHero({
   locale,
   hero,
-  newTabLabel,
 }: {
   locale: Locale;
   hero: Dictionary["hero"];
-  newTabLabel: string;
 }) {
   const prefersReducedMotion = useReducedMotion();
 
@@ -34,14 +31,15 @@ export function HomeHero({
   return (
     <section className="relative w-full bg-neutral-950">
       {/*
-       * Temporary hero imagery (Unsplash, coffee beans — the raw material
-       * behind SMBEST's coffee-ground bioplastic). Replace with official
-       * brand photography in /public/images/hero when available.
+       * Temporary hero imagery (Unsplash, 3D printing / prototyping — the
+       * full scope of SMBEST's business: materials, print services and
+       * prototype production). Replace with official brand photography in
+       * /public/images/hero when available.
        */}
       <SmoothScrollHero
         scrollHeight={SCROLL_HEIGHT}
-        desktopImage="/images/hero/hero-desktop.webp"
-        mobileImage="/images/hero/hero-mobile.webp"
+        desktopImage="/images/hero/3d-printing-prototype-desktop.webp"
+        mobileImage="/images/hero/3d-printing-prototype-mobile.webp"
         initialClipPercentage={25}
         finalClipPercentage={75}
       />
@@ -81,21 +79,17 @@ export function HomeHero({
             className="pointer-events-auto mt-9 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:max-w-none sm:flex-row"
           >
             <Link
-              href={`/${locale}/products`}
+              href={`/${locale}/contact`}
               className="inline-flex h-12 items-center justify-center rounded-md bg-background px-7 text-[0.9375rem] font-medium text-foreground transition-colors outline-none hover:bg-background/90 focus-visible:ring-2 focus-visible:ring-white"
+            >
+              {hero.ctaContact}
+            </Link>
+            <Link
+              href={`/${locale}/products`}
+              className="inline-flex h-12 items-center justify-center rounded-md border border-white/50 px-7 text-[0.9375rem] font-medium text-white transition-colors outline-none hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-white"
             >
               {hero.ctaProducts}
             </Link>
-            <a
-              href={site.smartStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-12 items-center justify-center gap-1.5 rounded-md border border-white/50 px-7 text-[0.9375rem] font-medium text-white transition-colors outline-none hover:bg-white/10 focus-visible:ring-2 focus-visible:ring-white"
-            >
-              {hero.ctaStore}
-              <ArrowUpRight className="size-4" aria-hidden="true" />
-              <span className="sr-only">({newTabLabel})</span>
-            </a>
           </motion.div>
 
           <motion.div

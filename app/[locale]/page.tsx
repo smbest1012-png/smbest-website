@@ -20,7 +20,7 @@ export default async function HomePage({
 
   return (
     <>
-      <HomeHero locale={locale} hero={dict.hero} newTabLabel={dict.a11y.newTab} />
+      <HomeHero locale={locale} hero={dict.hero} />
       <IntroSection intro={dict.intro} />
       <CategorySection locale={locale} categories={dict.categories} />
       <FeaturedSection

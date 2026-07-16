@@ -37,12 +37,12 @@ const ja: Dictionary = {
     homeLink: "SMBESTホームへ",
   },
   hero: {
-    tagline: "Sustainable Material Innovation",
-    headline: ["素材の可能性を、", "より良い製品へ"],
+    tagline: "素材 · 3Dプリント · 試作品製作",
+    headline: ["素材から出力まで、", "アイデアをかたちに"],
     description:
-      "SMBESTは、捨てられていたコーヒーかすや籾殻を素材としてよみがえらせ、3Dプリント材料と日常の製品をつくります。",
+      "SMBESTは環境に配慮した3Dプリンター用素材の開発・生産から、3Dプリント代行・試作品製作まで提供します。",
+    ctaContact: "出力・試作品製作を相談",
     ctaProducts: "製品を見る",
-    ctaStore: "Naverスマートストア",
     scroll: "スクロール",
   },
   intro: {

@@ -38,8 +38,10 @@ export interface Dictionary {
     tagline: string;
     headline: [string, string];
     description: string;
+    /** Primary CTA — printing/prototyping inquiry, links to /{locale}/contact */
+    ctaContact: string;
+    /** Secondary CTA — links to /{locale}/products */
     ctaProducts: string;
-    ctaStore: string;
     scroll: string;
   };
   intro: {

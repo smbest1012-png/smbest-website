@@ -36,12 +36,12 @@ const zh: Dictionary = {
     homeLink: "前往SMBEST首页",
   },
   hero: {
-    tagline: "Sustainable Material Innovation",
-    headline: ["将材料的潜力", "转化为更好的产品"],
+    tagline: "材料 · 3D打印 · 原型制作",
+    headline: ["从材料到打印，", "让创意成为现实"],
     description:
-      "SMBEST让被丢弃的咖啡渣和稻壳重获新生，制成3D打印材料和日常产品。",
+      "SMBEST研发并生产环保3D打印机材料，并提供3D打印代工与原型制作服务。",
+    ctaContact: "咨询打印与原型制作",
     ctaProducts: "浏览产品",
-    ctaStore: "Naver智能商店",
     scroll: "滚动",
   },
   intro: {

@@ -36,5 +36,5 @@
 - 외부 링크는 `target="_blank" rel="noopener noreferrer"` + 새 탭 sr-only 안내
 - 제품 성능·인증·수치는 공식 자료 없이 만들어내지 않는다
 - 가격/재고는 사이트에 표시하지 않는다 (스마트스토어에서 확인)
-- 히어로 이미지(`public/images/hero`)는 Unsplash 임시본 — 공식 사진으로 교체 예정
+- 히어로 이미지(`public/images/hero`)는 Pexels 임시본(3D 프린팅 공방, 데스크톱/모바일 동일 사진 크롭) — 공식 사진으로 교체 예정
 - 로고(`components/shared/logo*.tsx`)는 SVG 재현본 — 원본 벡터 수령 시 교체

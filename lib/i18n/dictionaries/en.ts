@@ -37,12 +37,12 @@ const en: Dictionary = {
     homeLink: "Go to SMBEST home",
   },
   hero: {
-    tagline: "Sustainable Material Innovation",
-    headline: ["Turning material potential", "into better products"],
+    tagline: "Materials · 3D Printing · Prototyping",
+    headline: ["From material to production,", "turning ideas into reality"],
     description:
-      "SMBEST gives discarded coffee grounds and rice husks a second life as materials — for 3D printing and for everyday products.",
+      "SMBEST develops and manufactures eco-friendly 3D printer materials and provides 3D printing and prototype production services.",
+    ctaContact: "Request printing & prototyping",
     ctaProducts: "Explore products",
-    ctaStore: "Naver Smart Store",
     scroll: "Scroll",
   },
   intro: {

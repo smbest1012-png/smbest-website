@@ -15,7 +15,7 @@ const ko: Dictionary = {
       "환경과 사람을 생각하는 기업 이념으로 2014년 설립된 친환경 소재 기업 에스엠베스트를 소개합니다.",
     productsTitle: "제품 | SMBEST",
     productsDescription:
-      "3D 프린팅용 레진과 필라멘트, 친환경 주방용품 — SMBEST의 제품을 소개합니다.",
+      "3D 프린터용 레진과 필라멘트, 친환경 주방용품 — SMBEST의 제품을 소개합니다.",
     contactTitle: "문의 | SMBEST",
     contactDescription:
       "에스엠베스트 제품·거래 문의. 부산광역시 부산진구 백양순환로 13.",
@@ -37,12 +37,12 @@ const ko: Dictionary = {
     homeLink: "SMBEST 홈으로 이동",
   },
   hero: {
-    tagline: "Sustainable Material Innovation",
-    headline: ["소재의 가능성을", "더 나은 제품으로"],
+    tagline: "Materials · 3D Printing · Prototyping",
+    headline: ["소재에서 출력까지,", "아이디어를 현실로"],
     description:
-      "SMBEST는 버려지던 커피박과 왕겨를 소재로 되살려 3D 프린팅 재료와 일상의 제품을 만듭니다.",
+      "SMBEST는 친환경 3D 프린터용 소재의 개발·생산부터 3D 출력 대행과 시제품 제작까지 제공합니다.",
+    ctaContact: "출력·시제품 제작 문의",
     ctaProducts: "제품 살펴보기",
-    ctaStore: "네이버 스마트스토어",
     scroll: "스크롤",
   },
   intro: {
@@ -78,9 +78,9 @@ const ko: Dictionary = {
     items: {
       resin: {
         name: "레진",
-        tagline: "3D 프린팅용 레진",
+        tagline: "3D 프린터용 레진",
         description:
-          "정밀한 출력을 위한 3D 프린팅용 레진 제품군입니다. 용도별 상세 사양은 스마트스토어에서 확인할 수 있습니다.",
+          "정밀한 출력을 위한 3D 프린터용 레진 제품군입니다. 용도별 상세 사양은 스마트스토어에서 확인할 수 있습니다.",
         cta: "레진 제품 보기",
       },
       filament: {
@@ -196,9 +196,9 @@ const ko: Dictionary = {
           "재활용이 어려운 커피찌꺼기, 왕겨 같은 천연 원료를 활용한 친환경 필라멘트를 만듭니다.",
       },
       {
-        title: "3D 프린팅용 레진",
+        title: "3D 프린터용 레진",
         description:
-          "덴탈 모델용·워셔블 등 용도에 맞춘 3D 프린팅용 UV 레진을 개발·생산합니다.",
+          "덴탈 모델용·워셔블 등 용도에 맞춘 3D 프린터용 UV 레진을 개발·생산합니다.",
       },
       {
         title: "생활용품",
